@@ -8,20 +8,17 @@
 <body>
     <style>
 
-        .yellow{
-        border-radius: 50%;
-        border: 20px yellow;
-        }
-    
-        .green{
-            border-radius: 50%;
-            border: 20px green;
+        body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
         }
 
-        .red{
-            border-radius: 50%;
-            border: 20px red;
-        }
         
         div{
         display: flex;
@@ -29,13 +26,81 @@
         align-items: flex-end;
         }
 
+
+        .cat {
+        border: 5px solid green;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        }
+
+
+        .horse {
+        border: 5px solid yellow;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        }
+
+        .camel{
+        border: 5px solid red;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        }
+
+
+        .container {
+        width: 80%; 
+        max-width: 1200px;
+        height: 800px;
+        margin: 0 auto; 
+        padding: 20px; 
+        background-color: #628ecf; 
+        border: 1px solid #ddd; 
+        border-radius: 8px; 
+        box-shadow: 0 4px 8px rgba(175, 174, 174, 0.1); 
+        }
+
+    </style>
+    
+
+
+    <div class="container">
+        <img src="/images/cat.png" alt="gato" class="cat">
+        <img src="/images/horse.png" alt="horse" class="horse">
+        <img src="/images/camel.png" alt="camel" class="camel">
+    </div>
+
+    <style>
+        .button-container {
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            width: 570px; 
+            margin: 50px auto; 
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 30px;
+            text-align: center;
+            text-decoration: none; 
+        }
+
+        .button:hover {
+            background-color: #00b345;/*qnd passa o mouse fica mais escuro o bloco do botão*/
+        }
+
     </style>
 
-        <div>
-            <img src="/images/camel.png" alt="camelo" class="green">
-            <img src="/images/horse.png" alt="cavalo" class="yellow">
-            <img src="/images/cat.png" alt="gato" class="red">
-        </div>
-    
+    <div class="button-container">
+        <a href="level8.html" class="button">Proximo Level</a>
+    </div>
 </body>
 </html>
